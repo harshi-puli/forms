@@ -1,5 +1,6 @@
 import { z } from "zod";
 
+<<<<<<< HEAD
 const requiredMsg = "Required";
 
 export const formSchema = z
@@ -36,3 +37,9 @@ export const formSchema = z
     message: "Passwords do not match",
     path: ["confirmPassword"], // error shows on the confirmPassword field
   });
+=======
+export const formSchema = z.object({
+    // Todo implement remaining fields
+    firstName: z.string().min(1),
+});
+>>>>>>> origin/main
